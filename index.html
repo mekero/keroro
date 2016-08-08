@@ -39,6 +39,10 @@
         font: 18px/34px "microsoft yahei";
         padding-left: 10px;
     }
+    /* 语法，参考自: http://webkit.org/blog/175/introducing-css-gradients/ */  
+-webkit-gradient(<type>, <point> [, <radius>]?, <point> [, <radius>]? [, <stop>]*)   
+/* 实际用法... */  
+background: -webkit-gradient(linear, 0 0, 0 100%, from(red), to(blue)); 
 
   </style>
   <body>
