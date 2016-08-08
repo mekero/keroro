@@ -1,34 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <title>大竣</title>
-     <style>
-    * {
-        margin:0;
-        height:0;
-    }
-    .box {
-        width: 350px;
-        height: 300px;
-        margin:300px auto;
-    }
-    .box  input{
-        width:200px;
-        height:30px;
+  <title>大竣</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+  <style>
+* {
+  margin:0;
+  height:0;
+}
+.box {
+  width: 400px;
+  height: 300px;
+  margin:300px auto;
+}
+     .box  input{
+            width:200px;
+            height:34px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: -9px;
+            border: 1px solid #ccc;
+
+      }
+      #b {
         display: inline-block;
-     }
-    .b {
-        display: inline-block;
+        text-decoration: none;
+        color:black;
+        font:20px/30px "microsoft yahei";
+        width: 120px;
+        height: 30px;
+        border-radius:3px;
+        border: 1px solid #ccc;
+        text-align: center;
+      }
+      input::-webkit-input-placeholder { /* WebKit browsers */
+        color: #969696;
+        font: 18px/34px "microsoft yahei";
+        padding-left: 10px;
     }
 
-    </style>
-<body>
+  </style>
+  <body>
 <div class="box">
-  <input type="text">
-  <a href="###" class="">你是傻瓜吗？</a>
+  <input type="text" placeholder="你是傻瓜吗？">
+  <a href="###" id="b" onclick="test()">咬我啊</a>
 </div>
 
-</body>
+
+
+  </body>
 </html>
+<script src="jquery.js"></script>
+<script type="text/javascript">
+function load(){
+      var b = document.getElementById("b").onclick();
+}
+function test(){
+        for(var i=0; i< 50;i++){
+        alert("哈哈哈，反正你很蠢...");
+        }
+}
+
+  </script>
